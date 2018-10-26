@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Change password</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.oldpasswd.label }}<br>
+            {{ form.oldpasswd(size=32) }}
+        </p>
+        <p>
+            {{ form.newpasswd.label }}<br>
+            {{ form.newpasswd(size=32) }}
+        </p>
+		<p>
+			{{ form.retpasswd.label }}<br>
+			{{ form.retpasswd(size=32) }}
+		</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
