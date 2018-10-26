@@ -1,1 +1,1 @@
-Test login server.
+Test login.
